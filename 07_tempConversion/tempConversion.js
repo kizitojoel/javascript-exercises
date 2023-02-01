@@ -1,7 +1,11 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(temp) {
+  let farhenheit = (temp - 32) * (5/9);
+  return parseFloat(farhenheit.toFixed(1))
+  
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(temp) {
+  return parseFloat(((temp * 1.8) + 32).toFixed(1))
 };
 
 // Do not edit below this line
